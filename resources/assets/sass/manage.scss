@@ -1,0 +1,28 @@
+.side-menu {
+  position: fixed;
+  top: 7.7rem;
+  bottom: 0;
+  margin:0;
+  width: 200px;
+}
+
+.management-area {
+  color:$white-ter;
+  &.bg {
+    background: rgba(48,48,48, 0.1);
+  }
+  top: 7.7rem;
+  right: 0;
+
+  @include desktop {
+    position: absolute;
+    left: 200px;
+  }
+
+}
+
+.flex-container {
+  margin: 25px;
+
+}
+

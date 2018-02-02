@@ -1,0 +1,71 @@
+html {
+  background: url('http://www.gosugamers.net/images/themes/default/body-bkg-dota2-n.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.navbar {
+  width: 100%;
+  background-color: transparent;
+  min-height: 7.7rem;
+
+  .navbar-menu{
+    background-color: transparent;
+  }
+
+  .label {
+    color: $grey-light;
+  }
+
+  .navbar-brand a.navbar-item , .navbar-item a.navbar-link {
+    &:hover{
+      background-color: transparent;
+    }
+  }
+  .navbar-item{
+    &:hover{
+      border-bottom-color: $navbar-tab-hover-border-bottom-color;
+    }
+  }
+  .b-checkbox.checkbox, a {
+    &:hover{
+      color: $grey-light;
+    }
+    color: $grey;
+  }
+
+  .navbar-burger {
+    border: none;
+    background-color: transparent;
+    color: white;
+  }
+
+
+  .navbar-item {
+    font-weight: 700;
+
+    &.is-tab{
+      border-bottom: 2px solid transparent;
+      &:hover{
+        border-bottom-color: $navbar-tab-hover-border-bottom-color;
+      }
+    }
+  }
+
+  .navbar-item img {
+    max-height: inherit;
+  }
+
+  .navbar-dropdown{
+    background-color: rgba(48,48,48, 0.9);
+    .navbar-item{
+      background-color: rgba(48,48,48, 0.1);
+      &:hover{background-color: $grey-dark;}
+    }
+    @include mobile {
+      left: 200px;
+    }
+  }
+
+
+}
